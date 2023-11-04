@@ -6,7 +6,7 @@ export const runtime = 'edge'; // 'nodejs' is the default
 export function GET(request: NextRequest) {
   return NextResponse.json(
     {
-      body: request.body,
+      body: "current time is" + new Date(),
       query: request.nextUrl.search,
       cookies: request.cookies.getAll(),
     },
