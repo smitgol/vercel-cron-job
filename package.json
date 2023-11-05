@@ -10,6 +10,7 @@
     "scheduler": "quirrel"
   },
   "dependencies": {
+    "@netlify/functions": "^2.3.0",
     "next": "14.0.1",
     "node": "^18.14.0",
     "quirrel": "^1.14.1",
