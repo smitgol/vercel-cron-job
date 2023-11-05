@@ -7,4 +7,4 @@ export const emailQueue = Queue(
   }
 )
 
-export const POST = emailQueue
+export default emailQueue;
