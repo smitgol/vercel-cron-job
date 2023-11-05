@@ -1,7 +1,7 @@
-import { Queue } from "quirrel/next-app"
+import { Queue } from "quirrel/netlify"
 
 export const emailQueue = Queue(
-  "api/queues/email", // 👈 the route it's reachable on
+  ".netlify/functions/email", // 👈 the route it's reachable on
   async job => {
     console.log('suii')
   }
