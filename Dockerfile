@@ -5,3 +5,12 @@ ENV ENABLE_SSRF_PREVENTION true
 
 ARG PORT
 ENV PORT ${PORT}
+
+FROM node:18
+WORKDIR /usr/src/app
+COPY . .
+RUN npm install --production
+RUN npm run build
+CMD ['npm', 'run']
+EXPOSE 3000
+ENV PORT 3000
