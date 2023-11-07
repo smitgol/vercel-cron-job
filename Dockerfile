@@ -6,7 +6,7 @@ ENV ENABLE_SSRF_PREVENTION true
 ARG PORT
 ENV PORT ${PORT}
 
-FROM node:18
+FROM node:18-alpine AS base
 WORKDIR /app
 COPY . .
 RUN npm install
