@@ -7,7 +7,7 @@ ARG PORT
 ENV PORT ${PORT}
 
 FROM node:18
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY . .
 RUN npm install --production
 RUN npm run build
